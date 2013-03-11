@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <ContentProjectGUID>{CE9CA9FE-E5D1-43BB-AA4C-9B6C6A65CAFE}</ContentProjectGUID>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>Reach</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>D:\Librerías\Research\Game Development\XNA\Pooyan\pooyan\Pooyan\Pooyan\PooyanContent\</RootDirectory>
+      <LoggerRootDirectory>D:\Librerías\Research\Game Development\XNA\Pooyan\pooyan\Pooyan\Pooyan\Pooyan\</LoggerRootDirectory>
+      <IntermediateDirectory>D:\Librerías\Research\Game Development\XNA\Pooyan\pooyan\Pooyan\Pooyan\Pooyan\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>D:\Librerías\Research\Game Development\XNA\Pooyan\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2013-01-22T16:59:43.8222933-03:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>
