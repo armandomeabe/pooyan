@@ -16,6 +16,7 @@ namespace Pooyan
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         Personaje player;
+        Escenario escenario;
 
         //String para ver el tiempo total de juego
         string totalTime;
@@ -36,7 +37,7 @@ namespace Pooyan
                 PreferredBackBufferWidth = 800,
                 PreferredBackBufferHeight = 480
             };
-            Window.AllowUserResizing = true;
+            Window.AllowUserResizing = false;
             Content.RootDirectory = "Content";
             //Window.ClientSizeChanged += new EventHandler<EventArgs>(Window_ClientSizeChanged);
         }
@@ -44,6 +45,7 @@ namespace Pooyan
         protected override void Initialize()
         {
             player = new Personaje();
+            escenario = new Escenario(Content);
             random = new Random();
             score = 0;
             timer = new TimeSpan(0);
@@ -57,26 +59,29 @@ namespace Pooyan
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             Animation AnimacionPersonaje = new Animation();
-            Texture2D TexturaPersonaje = Content.Load<Texture2D>("pooAnimation");
+            Texture2D TexturaPersonaje = Content.Load<Texture2D>("Personajes/pooAnimation");
             AnimacionPersonaje.Inicializar(TexturaPersonaje, Vector2.Zero, 25, 36, 3, 150, Color.White, 1f, true);
-            player.Inicializar(AnimacionPersonaje, new Vector2(100, 100), Content, GraphicsDevice);
+            var texturaProyectil = Content.Load<Texture2D>("Varias/bala1");
+            player.Inicializar(AnimacionPersonaje, Content, GraphicsDevice, texturaProyectil);
         }
 
         protected override void Update(GameTime gameTime)
         {
+            escenario.Update(gameTime);
             player.Update(gameTime, Keyboard.GetState(), GraphicsDevice, new Vector2(5, 0));
             timer += gameTime.ElapsedGameTime;
             totalTime = timer.ToString(@"mm\:ss");
-
             base.Update(gameTime);
         }
 
         protected override void Draw(GameTime gameTime)
         {
             spriteBatch.Begin();
+            escenario.Draw(spriteBatch);
             player.Draw(spriteBatch);
-            spriteBatch.End();
             base.Draw(gameTime);
+            spriteBatch.End();
+            
         }
     }
 }

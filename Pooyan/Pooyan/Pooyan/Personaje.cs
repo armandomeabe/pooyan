@@ -15,7 +15,7 @@ namespace Pooyan
         Vector2 DireccionDisparos;
         // Disparos
         public Texture2D TexturaProyectil;
-        public List<Projectil> Proyectiles;
+        public List<Proyectil> Proyectiles;
         SoundEffect SonidoLaser;
         // El rate de disparo del personaje
 
@@ -37,21 +37,18 @@ namespace Pooyan
             get { return Animacion.AltoFrame; }
         }
 
-        public void Inicializar(Animation animation, Vector2 position, ContentManager content, GraphicsDevice graphicsDevice)
+        public void Inicializar(Animation animation, ContentManager content, GraphicsDevice graphicsDevice, Texture2D texturaProyectil)
         {
+            this.TexturaProyectil = texturaProyectil;
             this.DireccionDisparos = new Vector2(15, 0);
             this.graphicsDevice = graphicsDevice;
             Animacion = animation;
-            Posicion = position;
+            Posicion = new Vector2(80, 100);
             Activo = true;
-
-            // Proyectiles
-            //Proyectiles = new List<Projectil>();
-            //TexturaProyectil = content.Load<Texture2D>("laser");
-            //SonidoLaser = content.Load<SoundEffect>("sound/laserFire");
+            Proyectiles = new List<Proyectil>();
         }
 
-        public void Disparar(int type, GameTime gameTime)
+        public void Disparar(GameTime gameTime)
         {
             TimeSpan delayShoot = gameTime.TotalGameTime; // -TiempoDeUltimoDisparo[type];
 
@@ -60,8 +57,7 @@ namespace Pooyan
             //TiempoDeUltimoDisparo[type] = gameTime.TotalGameTime;
             //Trace.WriteLine("delayShoot: " + delayShoot.ToString());
 
-            Proyectiles.Add(new Projectil(graphicsDevice.Viewport, TexturaProyectil, Posicion, DireccionDisparos));
-            SonidoLaser.Play();
+            Proyectiles.Add(new Proyectil(graphicsDevice.Viewport, TexturaProyectil, Posicion, DireccionDisparos));
         }
 
         public void Update(GameTime gameTime, KeyboardState keyboardState, GraphicsDevice graphics, Vector2 DireccionDisparos)
@@ -69,17 +65,6 @@ namespace Pooyan
             Animacion.Posicion = Posicion;
             Animacion.Update(gameTime);
 
-            //ActualizarProyectiles();
-
-            // Teclado / Dpad
-            /*if (keyboardState.IsKeyDown(Keys.Left))
-            {
-                Posicion.X -= velocidadMovimiento;
-            }
-            if (keyboardState.IsKeyDown(Keys.Right))
-            {
-                Posicion.X += velocidadMovimiento;
-            }*/
             if (keyboardState.IsKeyDown(Keys.Up))
             {
                 Posicion.Y -= velocidadMovimiento;
@@ -89,35 +74,28 @@ namespace Pooyan
                 Posicion.Y += velocidadMovimiento;
             }
 
+            if (keyboardState.IsKeyDown(Keys.LeftControl))
+                Disparar(gameTime);
+
             // Evitar que el personaje salga de la ventana
-            Posicion.X = MathHelper.Clamp(Posicion.X, 0, graphics.Viewport.Width - Ancho);
-            Posicion.Y = MathHelper.Clamp(Posicion.Y, 0, graphics.Viewport.Height - Alto);
+            Posicion.Y = MathHelper.Clamp(Posicion.Y, 125, 360);
 
             if (keyboardState.IsKeyDown(Keys.A))
-                Disparar(0, gameTime);
-        }
+                Disparar(gameTime);
 
-       /* public void ActualizarProyectiles()
-        {
-            // Update the Projectiles
-            for (int i = Proyectiles.Count - 1; i >= 0; i--)
+            foreach (var proyectil in Proyectiles)
             {
-                Proyectiles[i].Update();
-                if (Proyectiles[i].Activo == false)
-                {
-                    Proyectiles.RemoveAt(i);
-                }
+                proyectil.Update(gameTime);
             }
-        }*/
-
+        }
+        
         public void Draw(SpriteBatch spriteBatch)
         {
-            /*foreach (var p in Proyectiles)
-            {
-                p.Draw(spriteBatch);
-            }*/
-
             Animacion.Draw(spriteBatch);
+            foreach (var proyectil in Proyectiles)
+            {
+                proyectil.Draw(spriteBatch);
+            }
         }
     }
 }

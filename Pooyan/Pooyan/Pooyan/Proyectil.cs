@@ -7,7 +7,7 @@ using Microsoft.Xna.Framework;
 
 namespace Pooyan
 {
-    class Projectil
+    class Proyectil
     {
         public Texture2D Textura;
         public Vector2 Posicion;
@@ -28,18 +28,18 @@ namespace Pooyan
 
         float VelocidadDeMovimiento;
 
-        public Projectil(Viewport viewport, Texture2D textura, Vector2 posicion, Vector2 direccion, int DaniosQueCausa = 2)
+        public Proyectil(Viewport viewport, Texture2D textura, Vector2 posicion, Vector2 direccion, int DaniosQueCausa = 2)
         {
             this.Direccion = direccion;
             Textura = textura;
-            Posicion = new Vector2(posicion.X, posicion.Y + (new Random(DateTime.Now.Millisecond).Next(-15, 15)));
+            Posicion = new Vector2(posicion.X, posicion.Y + (new Random().Next(-5, 5)));
             this.viewport = viewport;
             Activo = true;
             this.DaniosQueCausa = DaniosQueCausa;
             VelocidadDeMovimiento = 20f;
         }
 
-        public void Update()
+        public void Update(GameTime gameTime)
         {
             Posicion += Direccion;
             // Si se van de la pantalla los desactivo para que después se borren del vector.

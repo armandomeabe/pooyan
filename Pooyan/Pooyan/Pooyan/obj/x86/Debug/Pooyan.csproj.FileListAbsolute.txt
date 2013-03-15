@@ -1,7 +1,12 @@
-D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\pooAnimation.xnb
 D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Pooyan.exe
 D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Pooyan.pdb
-D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\obj\x86\Debug\Pooyan.csprojResolveAssemblyReference.cache
 D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\obj\x86\Debug\Pooyan.exe
 D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\obj\x86\Debug\Pooyan.pdb
+D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Personajes\pooAnimation.xnb
+D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Escenario\Fondo1.xnb
+D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Varias\bala1.xnb
+D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Escenario\1.xnb
+D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Escenario\2.xnb
+D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Escenario\bala1.xnb
+D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Escenario\bichito.xnb

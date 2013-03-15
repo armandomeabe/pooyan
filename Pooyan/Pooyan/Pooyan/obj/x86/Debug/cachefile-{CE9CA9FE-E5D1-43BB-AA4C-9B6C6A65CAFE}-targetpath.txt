@@ -1,1 +1,7 @@
-Content\pooAnimation.xnb
+Content\Personajes\pooAnimation.xnb
+Content\Escenario\Fondo1.xnb
+Content\Escenario\1.xnb
+Content\Escenario\2.xnb
+Content\Escenario\bala1.xnb
+Content\Varias\bala1.xnb
+Content\Escenario\bichito.xnb

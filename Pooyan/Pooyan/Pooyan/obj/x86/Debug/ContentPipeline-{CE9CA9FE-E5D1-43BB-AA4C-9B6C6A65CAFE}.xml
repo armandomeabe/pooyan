@@ -2,13 +2,67 @@
 <XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
   <Asset Type="Pipeline:BuildItemCollection">
     <Item>
-      <Source>pooAnimation.png</Source>
-      <Name>pooAnimation</Name>
+      <Source>Personajes\pooAnimation.png</Source>
+      <Name>Personajes\pooAnimation</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\pooAnimation.xnb</Output>
+      <Output>D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Personajes\pooAnimation.xnb</Output>
       <Time>2013-03-15T16:47:17.5833153-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Escenario\Fondo1.png</Source>
+      <Name>Escenario\Fondo1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Escenario\Fondo1.xnb</Output>
+      <Time>2013-03-15T18:54:49.7009422-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Escenario\1.png</Source>
+      <Name>Escenario\1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Escenario\1.xnb</Output>
+      <Time>2013-03-15T18:17:20.266662-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Escenario\2.png</Source>
+      <Name>Escenario\2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Escenario\2.xnb</Output>
+      <Time>2013-03-15T18:17:20.2947063-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Escenario\bala1.png</Source>
+      <Name>Escenario\bala1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Escenario\bala1.xnb</Output>
+      <Time>2013-03-15T18:17:20.2956663-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Varias\bala1.png</Source>
+      <Name>Varias\bala1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Varias\bala1.xnb</Output>
+      <Time>2013-03-15T17:58:58.2764361-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Escenario\bichito.png</Source>
+      <Name>Escenario\bichito</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Escenario\bichito.xnb</Output>
+      <Time>2013-03-15T18:57:36.8433596-03:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
