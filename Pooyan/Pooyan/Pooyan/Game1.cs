@@ -108,7 +108,7 @@ namespace Pooyan
 
             Animation AnimacionPersonaje = new Animation();
             Texture2D TexturaPersonaje = Content.Load<Texture2D>("pooAnimation");
-            AnimacionPersonaje.Inicializar(TexturaPersonaje, Vector2.Zero, 25, 36, 3, 30, Color.White, 1f, true);
+            AnimacionPersonaje.Inicializar(TexturaPersonaje, Vector2.Zero, 25, 36, 3, 150, Color.White, 1f, true);
 
             PosicionInicialPersonaje = new Vector2(GraphicsDevice.Viewport.TitleSafeArea.X+20, GraphicsDevice.Viewport.TitleSafeArea.Y
             + GraphicsDevice.Viewport.TitleSafeArea.Height / 2);
