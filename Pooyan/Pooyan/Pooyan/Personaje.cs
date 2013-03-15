@@ -83,9 +83,11 @@ namespace Pooyan
             if (keyboardState.IsKeyDown(Keys.A))
                 Disparar(gameTime);
 
-            foreach (var proyectil in Proyectiles)
+            foreach (var proyectil in Proyectiles.ToList())
             {
                 proyectil.Update(gameTime);
+                if (proyectil.Posicion.X > 800)
+                    Proyectiles.Remove(proyectil);
             }
         }
         
