@@ -1,6 +1,0 @@
-D:\Librerías\Research\Game Development\XNA\Pooyan\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Pooyan.exe
-D:\Librerías\Research\Game Development\XNA\Pooyan\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Pooyan.pdb
-D:\Librerías\Research\Game Development\XNA\Pooyan\pooyan\Pooyan\Pooyan\Pooyan\obj\x86\Debug\Pooyan.csprojResolveAssemblyReference.cache
-D:\Librerías\Research\Game Development\XNA\Pooyan\pooyan\Pooyan\Pooyan\Pooyan\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
-D:\Librerías\Research\Game Development\XNA\Pooyan\pooyan\Pooyan\Pooyan\Pooyan\obj\x86\Debug\Pooyan.exe
-D:\Librerías\Research\Game Development\XNA\Pooyan\pooyan\Pooyan\Pooyan\Pooyan\obj\x86\Debug\Pooyan.pdb
