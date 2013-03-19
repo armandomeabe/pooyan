@@ -8,6 +8,7 @@ using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
+using Pooyan.GameObjects;
 
 namespace Pooyan
 {
@@ -15,7 +16,7 @@ namespace Pooyan
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-        Personaje player;
+        Player player;
         Escenario escenario;
 
         //String para ver el tiempo total de juego
@@ -44,7 +45,7 @@ namespace Pooyan
 
         protected override void Initialize()
         {
-            player = new Personaje();
+            player = new Player(Content, new List<string>() { @"Varias\Ovni\" }, new List<int> { 11 });
             escenario = new Escenario(Content);
             random = new Random();
             score = 0;
@@ -58,17 +59,17 @@ namespace Pooyan
             // El SpriteBatch se usa para dibujar todo.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            Animation AnimacionPersonaje = new Animation();
-            Texture2D TexturaPersonaje = Content.Load<Texture2D>("Personajes/pooAnimation");
-            AnimacionPersonaje.Inicializar(TexturaPersonaje, Vector2.Zero, 25, 36, 3, 150, Color.White, 1f, true);
-            var texturaProyectil = Content.Load<Texture2D>("Varias/bala1");
-            player.Inicializar(AnimacionPersonaje, Content, GraphicsDevice, texturaProyectil);
+            //Animation AnimacionPersonaje = new Animation();
+            //Texture2D TexturaPersonaje = Content.Load<Texture2D>("Personajes/pooAnimation");
+            //AnimacionPersonaje.Inicializar(TexturaPersonaje, Vector2.Zero, 25, 36, 3, 150, Color.White, 1f, true);
+            //var texturaProyectil = Content.Load<Texture2D>("Varias/bala1");
+            //player.Inicializar(AnimacionPersonaje, Content, GraphicsDevice, texturaProyectil);
         }
 
         protected override void Update(GameTime gameTime)
         {
             escenario.Update(gameTime);
-            player.Update(gameTime, Keyboard.GetState(), GraphicsDevice, new Vector2(5, 0));
+            player.Update(gameTime, Keyboard.GetState(), GamePad.GetState(0));
             timer += gameTime.ElapsedGameTime;
             totalTime = timer.ToString(@"mm\:ss");
             base.Update(gameTime);

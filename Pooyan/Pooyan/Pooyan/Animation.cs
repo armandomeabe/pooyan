@@ -4,106 +4,105 @@ using System.Linq;
 using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Content;
 
 namespace Pooyan
 {
     class Animation
     {
-        // Textura donde estan TODOS los sprites en orden y donde todos tienen el MISMO ANCHO
-        Texture2D TexturaSprites;
+        /// <summary>
+        /// Duration of Each Frame
+        /// </summary>
+        public double FrameDuration { get; set; }
 
-        // Escala que se aplica a cada sprite
-        float Escala;
+        /// <summary>
+        /// Number of Frames
+        /// </summary>
+        public int StateCount { get; set; }
 
-        // Cuanto tiempo pasó desde el último cambio de frames? (Se usa con la variable siguiente)
-        int TiempoTranscurrido;
+        /// <summary>
+        /// Path of Image Resource
+        /// </summary>
+        public string Path { get; set; }
 
-        // Cuanto tiempo transcurre entre frame y frame? Esto siempre va a ser una subestimación
-        int TiempoEntreFrames;
+        /// <summary>
+        /// Position on Screen
+        /// </summary>
+        public Vector2 Position { get; set; }
 
-        // Cuantos frames hay en total? El ancho total de la imagen debería ser esta variable * ancho de cada frame
-        int FramesEnLaImagen;
+        /// <summary>
+        /// Gets or sets whether animation should be looped
+        /// </summary>
+        public bool Loop { get; set; }
 
-        // El índice del frame que se está mostrando en un momento dado
-        int FrameActual;
+        /// <summary>
+        /// Format of File Path
+        /// </summary>
+        public string FilePathFormat { get; set; }
 
-        // Esto es porque se pueden aplicar efectos de color a los frames, como que se ponga rojo si le pegan.
-        Color color;
+        /// <summary>
+        /// Stores all Frames in Textures
+        /// </summary>
+        private Texture2D[] textures;
 
-        // La parte de la textura que se quiere dibujar
-        Rectangle RectanguloOrigen = new Rectangle();
+        /// <summary>
+        /// Time elapsed since last state change
+        /// </summary>
+        private double timeSinceLastStateChange;
 
-        // El area donde se quiere dibujar el frame en la ventana
-        Rectangle RectanguloDestino = new Rectangle();
+        /// <summary>
+        /// Current State
+        /// </summary>
+        private int state;
 
-        // Útiles para pasar de un frame a otro dentro de una imagen con muchos sprites o frames
-        public int AnchoFrame;
-        public int AltoFrame;
-
-        public bool Activo;
-
-        // Determina si se repite por siempre la animación
-        public bool Repetir;
-
-        public Vector2 Posicion;
-
-        public void Inicializar(Texture2D texture, Vector2 position,
-            int frameWidth, int frameHeight, int frameCount,
-            int frametime, Color color, float scale, bool looping)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="Path"></param>
+        /// <param name="stateCount">Ruta donde se encuentran los png numerados de 0 a n: 0.png, 1.png...</param>
+        public Animation(string Path, int stateCount)
         {
-            this.color = color;
-            this.AnchoFrame = frameWidth;
-            this.AltoFrame = frameHeight;
-            this.FramesEnLaImagen = frameCount;
-            this.TiempoEntreFrames = frametime;
-            this.Escala = scale;
-
-            Repetir = looping;
-            Posicion = position;
-            TexturaSprites = texture;
-
-            TiempoTranscurrido = 0;
-            FrameActual = 0;
-
-            Activo = true;
+            FrameDuration = 0.1;
+            Position = Vector2.Zero;
+            Loop = true;
+            FilePathFormat = "{0}{1}"; // Ej: "carpeta/" + "gif1"
+            this.Path = Path;
+            this.StateCount = stateCount;
         }
 
-        public void Update(GameTime gameTime)
+        // Cargar las imágenes en memoria.
+        public void Load(ContentManager content)
         {
-            if (!Activo) return;
-
-            // Se actualiza el tiempo transcurrido, gameTime ya viene desde Game1 y se calcula solo
-            TiempoTranscurrido += (int)gameTime.ElapsedGameTime.TotalMilliseconds;
-
-            // Si el tiempo transcurrido es mayor al tiempo entre frame y frame, hay que cambiarlo y resetearlo
-            if (TiempoTranscurrido > TiempoEntreFrames)
+            textures = new Texture2D[StateCount];
+            for (uint i = 0; i < StateCount; i++)
             {
-                FrameActual++;
-                // Si el frame actual es igual a la cantidad total de frames, se resetea el actual
-                if (FrameActual == FramesEnLaImagen)
-                {
-                    FrameActual = 0;
-                    if (!Repetir) Activo = false;
-                }
-                TiempoTranscurrido = 0;
+                textures[i] = content.Load<Texture2D>(string.Format(FilePathFormat, Path, i));
             }
+        }
 
-            // El frame correcto se saca de multiplicar el frame actual por el ancho de cada sprite
-            // O sea que tienen que ser todos iguales
-            RectanguloOrigen = new Rectangle(FrameActual * AnchoFrame, 0, AnchoFrame, AltoFrame);
-
-            // El frame correcto se saca de multiplicar el frame actual por el ancho de cada sprite
-            // O sea que tienen que ser todos iguales
-            RectanguloDestino = new Rectangle((int)Posicion.X - (int)(AnchoFrame * Escala) / 2,
-            (int)Posicion.Y - (int)(AltoFrame * Escala) / 2,
-            (int)(AnchoFrame * Escala),
-            (int)(AltoFrame * Escala));
+        public void Update(TimeSpan elapsedGameTime, Vector2 position)
+        {
+            this.Position = position;
+            timeSinceLastStateChange += elapsedGameTime.TotalSeconds;
+            if (timeSinceLastStateChange > FrameDuration)
+            {
+                timeSinceLastStateChange -= FrameDuration;
+                state++;
+            }
+            if (Loop && state == StateCount)
+            {
+                state = 0;
+            }
         }
 
         public void Draw(SpriteBatch spriteBatch)
         {
-            if (Activo)
-                spriteBatch.Draw(TexturaSprites, RectanguloDestino, RectanguloOrigen, color);
+            //spriteBatch.Begin(); // Quizás debería sacar esto de acá, si ya fue iniciado desde donde se llama...
+            if (state < StateCount)
+            {
+                spriteBatch.Draw(textures[state], Position, Color.White);
+            }
+            //spriteBatch.End(); // Y esto también.
         }
     }
 }

@@ -53,7 +53,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Varias\bala1.xnb</Output>
-      <Time>2013-03-15T17:58:58.2764361-03:00</Time>
+      <Time>2013-03-15T17:58:46.4519253-03:00</Time>
     </Item>
     <Item>
       <Source>Escenario\bichito.png</Source>
@@ -63,6 +63,141 @@
       <Options>None</Options>
       <Output>D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Escenario\bichito.xnb</Output>
       <Time>2013-03-15T18:57:36.8433596-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Varias\pulling.png</Source>
+      <Name>Varias\pulling</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Varias\pulling.xnb</Output>
+      <Time>2013-03-19T15:18:15.5504315-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Varias\Ovni\0.png</Source>
+      <Name>Varias\Ovni\0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Varias\Ovni\0.xnb</Output>
+      <Time>2013-03-19T15:39:54.028862-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Varias\Ovni\1.png</Source>
+      <Name>Varias\Ovni\1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Varias\Ovni\1.xnb</Output>
+      <Time>2013-03-19T15:39:54.0318347-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Varias\Ovni\10.png</Source>
+      <Name>Varias\Ovni\10</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Varias\Ovni\10.xnb</Output>
+      <Time>2013-03-19T15:39:54.0598401-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Varias\Ovni\11.png</Source>
+      <Name>Varias\Ovni\11</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Varias\Ovni\11.xnb</Output>
+      <Time>2013-03-19T15:39:54.0618413-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Varias\Ovni\2.png</Source>
+      <Name>Varias\Ovni\2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Varias\Ovni\2.xnb</Output>
+      <Time>2013-03-19T15:39:54.0338355-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Varias\Ovni\3.png</Source>
+      <Name>Varias\Ovni\3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Varias\Ovni\3.xnb</Output>
+      <Time>2013-03-19T15:39:54.0358362-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Varias\Ovni\4.png</Source>
+      <Name>Varias\Ovni\4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Varias\Ovni\4.xnb</Output>
+      <Time>2013-03-19T15:39:54.0378365-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Varias\Ovni\5.png</Source>
+      <Name>Varias\Ovni\5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Varias\Ovni\5.xnb</Output>
+      <Time>2013-03-19T15:39:54.0398386-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Varias\Ovni\6.png</Source>
+      <Name>Varias\Ovni\6</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Varias\Ovni\6.xnb</Output>
+      <Time>2013-03-19T15:39:54.0418374-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Varias\Ovni\7.png</Source>
+      <Name>Varias\Ovni\7</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Varias\Ovni\7.xnb</Output>
+      <Time>2013-03-19T15:39:54.0528424-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Varias\Ovni\8.png</Source>
+      <Name>Varias\Ovni\8</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Varias\Ovni\8.xnb</Output>
+      <Time>2013-03-19T15:39:54.0548422-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Varias\Ovni\9.png</Source>
+      <Name>Varias\Ovni\9</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Varias\Ovni\9.xnb</Output>
+      <Time>2013-03-19T15:39:54.0578394-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Extras\Spark.png</Source>
+      <Name>Extras\Spark</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Extras\Spark.xnb</Output>
+      <Time>2013-02-11T14:20:20.707904-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Extras\star.png</Source>
+      <Name>Extras\star</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Extras\star.xnb</Output>
+      <Time>2013-02-11T14:20:20.7391078-03:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
