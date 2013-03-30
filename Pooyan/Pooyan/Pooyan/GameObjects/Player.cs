@@ -7,6 +7,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Pooyan.GameObjects.Base;
+using Microsoft.Xna.Framework.Audio;
 
 namespace Pooyan.GameObjects
 {
@@ -19,8 +20,8 @@ namespace Pooyan.GameObjects
         public List<Projectil> Projectils { get; set; }
         public Texture2D ProjectilTexture { get; set; }
 
-        // Extras
-        ParticleEngine.Engine particleEngine;
+        //Sonido
+        SoundEffect sonidoDisparo;
 
         /// <summary>
         /// Constructor del personaje.
@@ -32,10 +33,9 @@ namespace Pooyan.GameObjects
         {
             this.Life = 100;
             base.position = new Vector2(52, 100);
-            // Rastro de partículas
-            var textures = new List<Texture2D>();
-            textures.Add(content.Load<Texture2D>(@"Extras\spark"));
-            particleEngine = new ParticleEngine.Engine(textures);
+
+            sonidoDisparo = Content.Load<SoundEffect>("sound/laserFire");
+
             Projectils = new List<Projectil>();
             ProjectilTexture = content.Load<Texture2D>(@"Varias\bala1");
         }
@@ -44,36 +44,35 @@ namespace Pooyan.GameObjects
         {
             if (keyboardState.IsKeyDown(Keys.Up))
             {
-                base.Move(new Vector2(0, -5));
+                if (position.Y >= 150)
+                    base.Move(new Vector2(0, -5));
             }
             else if (keyboardState.IsKeyDown(Keys.Down))
             {
-                base.Move(new Vector2(0, 5));
+                if (position.Y <= 350)
+                    base.Move(new Vector2(0, 5));
             }
-            if (keyboardState.IsKeyDown(Keys.LeftControl))
+            if (keyboardState.IsKeyDown(Keys.Space))
             {
                 Shoot(10);
             }
 
             foreach (var projectil in Projectils.ToList())
             {
-                projectil.position.X += 10;
-                if (projectil.position.X > 760)
+                projectil.Update(gameTime);
+                if (!projectil.activo)
                     Projectils.Remove(projectil);
             }
 
             base.Update(gameTime);
-
-            // Partículas
-            particleEngine.EmitterLocation = new Vector2(base.position.X + 15, base.position.Y + 25);
-            particleEngine.Update();
         }
 
         public void Shoot(int burstQuantity = 1)
         {
             for (int i = 0; i < burstQuantity; i++)
             {
-                Projectils.Add(new Projectil() { position = new Vector2(position.X + 30, position.Y + 20 + (new Random()).Next(-10, 10)), texture = ProjectilTexture });
+                sonidoDisparo.Play();
+                Projectils.Add(new Projectil(base.Content) { position = new Vector2(position.X + 30, position.Y + 20 + (new Random()).Next(-10, 10)), texture = ProjectilTexture });
             }
         }
 
@@ -81,9 +80,8 @@ namespace Pooyan.GameObjects
         {
             foreach (var projectil in Projectils)
             {
-                spriteBatch.Draw(projectil.texture, projectil.position, Color.White);
+                projectil.Draw(spriteBatch);
             }
-            particleEngine.Draw(spriteBatch);
             base.Draw(spriteBatch);
         }
 

@@ -34,12 +34,12 @@ namespace Pooyan.ParticleEngine
             float angle = 0;
             float angularVelocity = 0.1f * (float)(random.NextDouble() * 2 - 1);
 
-            var color = Color.Gray;
+            var color = Color.WhiteSmoke;
             //if (randomColors)
             color = new Color(
-                        random.Next(25, 50),
-                        random.Next(25, 50),
-                        random.Next(25, 50));
+                        255,
+                        random.Next(50, 150),
+                        random.Next(50, 150));
 
             float size = (float)random.NextDouble();
             int ttl = 20 + random.Next(40);

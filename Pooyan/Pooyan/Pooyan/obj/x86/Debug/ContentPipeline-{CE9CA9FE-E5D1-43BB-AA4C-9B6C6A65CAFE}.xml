@@ -199,6 +199,233 @@
       <Output>D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Extras\star.xnb</Output>
       <Time>2013-02-11T14:20:20.7391078-03:00</Time>
     </Item>
+    <Item>
+      <Source>Sound\explosion.wav</Source>
+      <Name>Sound\explosion</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Sound\explosion.xnb</Output>
+      <Time>2011-04-01T09:42:38-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Sound\laserFire.wav</Source>
+      <Name>Sound\laserFire</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Sound\laserFire.xnb</Output>
+      <Time>2011-04-01T09:42:38-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Sound\gameMusic.mp3</Source>
+      <Name>Sound\gameMusic</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Sound\gameMusic.xnb</Output>
+      <Extra>D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Sound\gameMusic.wma</Extra>
+      <Time>2011-04-01T09:42:38-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Sound\menuMusic.mp3</Source>
+      <Name>Sound\menuMusic</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Sound\menuMusic.xnb</Output>
+      <Extra>D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Sound\menuMusic.wma</Extra>
+      <Time>2011-04-01T09:42:38-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Extras\Explosion1\0.png</Source>
+      <Name>Extras\Explosion1\0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Extras\Explosion1\0.xnb</Output>
+      <Time>2013-03-30T15:45:53.7879097-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Extras\Explosion1\1.png</Source>
+      <Name>Extras\Explosion1\1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Extras\Explosion1\1.xnb</Output>
+      <Time>2013-03-30T15:45:53.7909161-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Extras\Explosion1\10.png</Source>
+      <Name>Extras\Explosion1\10</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Extras\Explosion1\10.xnb</Output>
+      <Time>2013-03-30T15:45:53.8389206-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Extras\Explosion1\11.png</Source>
+      <Name>Extras\Explosion1\11</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Extras\Explosion1\11.xnb</Output>
+      <Time>2013-03-30T15:45:53.840917-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Extras\Explosion1\12.png</Source>
+      <Name>Extras\Explosion1\12</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Extras\Explosion1\12.xnb</Output>
+      <Time>2013-03-30T15:45:53.8499173-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Extras\Explosion1\13.png</Source>
+      <Name>Extras\Explosion1\13</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Extras\Explosion1\13.xnb</Output>
+      <Time>2013-03-30T15:45:53.8519229-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Extras\Explosion1\14.png</Source>
+      <Name>Extras\Explosion1\14</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Extras\Explosion1\14.xnb</Output>
+      <Time>2013-03-30T15:45:53.8549211-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Extras\Explosion1\15.png</Source>
+      <Name>Extras\Explosion1\15</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Extras\Explosion1\15.xnb</Output>
+      <Time>2013-03-30T15:45:53.8569199-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Extras\Explosion1\16.png</Source>
+      <Name>Extras\Explosion1\16</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Extras\Explosion1\16.xnb</Output>
+      <Time>2013-03-30T15:45:53.8599191-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Extras\Explosion1\17.png</Source>
+      <Name>Extras\Explosion1\17</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Extras\Explosion1\17.xnb</Output>
+      <Time>2013-03-30T15:45:53.8619183-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Extras\Explosion1\18.png</Source>
+      <Name>Extras\Explosion1\18</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Extras\Explosion1\18.xnb</Output>
+      <Time>2013-03-30T15:45:53.8639191-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Extras\Explosion1\19.png</Source>
+      <Name>Extras\Explosion1\19</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Extras\Explosion1\19.xnb</Output>
+      <Time>2013-03-30T15:45:53.8659188-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Extras\Explosion1\2.png</Source>
+      <Name>Extras\Explosion1\2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Extras\Explosion1\2.xnb</Output>
+      <Time>2013-03-30T15:45:53.792911-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Extras\Explosion1\20.png</Source>
+      <Name>Extras\Explosion1\20</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Extras\Explosion1\20.xnb</Output>
+      <Time>2013-03-30T15:45:53.8679205-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Extras\Explosion1\3.png</Source>
+      <Name>Extras\Explosion1\3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Extras\Explosion1\3.xnb</Output>
+      <Time>2013-03-30T15:45:53.7959165-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Extras\Explosion1\4.png</Source>
+      <Name>Extras\Explosion1\4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Extras\Explosion1\4.xnb</Output>
+      <Time>2013-03-30T15:45:53.8119199-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Extras\Explosion1\5.png</Source>
+      <Name>Extras\Explosion1\5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Extras\Explosion1\5.xnb</Output>
+      <Time>2013-03-30T15:45:53.8149176-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Extras\Explosion1\6.png</Source>
+      <Name>Extras\Explosion1\6</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Extras\Explosion1\6.xnb</Output>
+      <Time>2013-03-30T15:45:53.816913-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Extras\Explosion1\7.png</Source>
+      <Name>Extras\Explosion1\7</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Extras\Explosion1\7.xnb</Output>
+      <Time>2013-03-30T15:45:53.8199132-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Extras\Explosion1\8.png</Source>
+      <Name>Extras\Explosion1\8</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Extras\Explosion1\8.xnb</Output>
+      <Time>2013-03-30T15:45:53.8339211-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Extras\Explosion1\9.png</Source>
+      <Name>Extras\Explosion1\9</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Librerías\Research\Game Development\XNA\Pooyan2\pooyan\Pooyan\Pooyan\Pooyan\bin\x86\Debug\Content\Extras\Explosion1\9.xnb</Output>
+      <Time>2013-03-30T15:45:53.8359151-03:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{CE9CA9FE-E5D1-43BB-AA4C-9B6C6A65CAFE}</ContentProjectGUID>

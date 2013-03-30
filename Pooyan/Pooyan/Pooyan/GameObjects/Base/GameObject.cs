@@ -13,14 +13,18 @@ namespace Pooyan.GameObjects.Base
         public Vector2 position;
         public Vector2 speed;
         Animation[] animatedGif;
-
+        public ContentManager Content { get; set; }
         /// <summary>
         /// 
         /// </summary>
         /// <param name="content"></param>
         /// <param name="animationPaths">Son LAS rutaS donde se encuentran las animaciones para los diferentes estados del object (ej: Caminando, En reposo, disparando...)</param>
+        /// <param name="animationFramesForEachPath">Cuantos frames tiene cada path?</param>
         public GameObject(ContentManager content, List<string> animationPaths, List<int> animationFramesForEachPath)
         {
+            Content = content;
+            if (!animationPaths.Count.Equals(animationFramesForEachPath.Count)) throw new Exception("La cantidad rutas de animaciones no se corresponde con la cantidad de frames para cada ruta");
+
             if (!animationPaths.Count().Equals(animationFramesForEachPath.Count())) throw new Exception("La cantidad de rutas no se corresponde con la cantidad de frames para cada ruta");
 
             this.position = new Vector2(350);

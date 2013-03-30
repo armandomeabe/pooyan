@@ -55,6 +55,8 @@ namespace Pooyan
         /// </summary>
         private int state;
 
+        public bool animacionFinalizada { get; set; }
+
         /// <summary>
         /// 
         /// </summary>
@@ -62,7 +64,8 @@ namespace Pooyan
         /// <param name="stateCount">Ruta donde se encuentran los png numerados de 0 a n: 0.png, 1.png...</param>
         public Animation(string Path, int stateCount)
         {
-            FrameDuration = 0.1;
+            animacionFinalizada = false;
+            FrameDuration = 0.05;
             Position = Vector2.Zero;
             Loop = true;
             FilePathFormat = "{0}{1}"; // Ej: "carpeta/" + "gif1"
@@ -92,6 +95,7 @@ namespace Pooyan
             if (Loop && state == StateCount)
             {
                 state = 0;
+                animacionFinalizada = true;
             }
         }
 
