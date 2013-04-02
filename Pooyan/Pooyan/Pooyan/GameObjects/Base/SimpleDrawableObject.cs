@@ -7,7 +7,7 @@ using Microsoft.Xna.Framework;
 
 namespace Pooyan.GameObjects.Base
 {
-    class SimpleDrawableObject
+    public class SimpleDrawableObject
     {
         public Texture2D texture;
         public Vector2 position;

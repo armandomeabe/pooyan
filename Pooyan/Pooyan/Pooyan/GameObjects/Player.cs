@@ -11,7 +11,7 @@ using Microsoft.Xna.Framework.Audio;
 
 namespace Pooyan.GameObjects
 {
-    class Player : GameObject
+    public class Player : GameObject
     {
         // Elementos propios de un personaje de juego.
         public float Life { get; set; }
@@ -32,7 +32,7 @@ namespace Pooyan.GameObjects
             : base(content, animationPaths, animationFramesForEachPath)
         {
             this.Life = 100;
-            base.position = new Vector2(52, 100);
+            base.position = new Vector2(52, 150);
 
             sonidoDisparo = Content.Load<SoundEffect>("sound/laserFire");
 

@@ -46,7 +46,7 @@ namespace Pooyan
         protected override void Initialize()
         {
             player = new Player(Content, new List<string>() { @"Varias\Ovni\" }, new List<int> { 11 });
-            escenario = new Escenario(Content);
+            escenario = new Escenario(Content, ref player);
             random = new Random();
             score = 0;
             timer = new TimeSpan(0);

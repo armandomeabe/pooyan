@@ -36,18 +36,20 @@ namespace Pooyan.GameObjects.Base
                 animatedGif[i].Load(content);
             }
 
-            speed = Vector2.Zero; // Por defecto no se mueve "solo" sino que se llama a .Move()
+            speed = Vector2.Zero; // Por defecto no se mueve "solo" hay que llamar a .Move()
         }
 
         protected void Update(GameTime gameTime)
         {
             position += speed;
-            animatedGif[0].Update(gameTime.ElapsedGameTime, position);
+            foreach (var animation in animatedGif)
+                animation.Update(gameTime.ElapsedGameTime, position);
         }
 
         public void Draw(SpriteBatch spriteBatch)
         {
-            animatedGif[0].Draw(spriteBatch);
+            foreach (var animation in animatedGif)
+                animation.Draw(spriteBatch);
         }
 
         public void Move(Vector2 relativeDirection)

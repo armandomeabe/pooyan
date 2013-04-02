@@ -9,7 +9,7 @@ using Microsoft.Xna.Framework;
 
 namespace Pooyan.GameObjects
 {
-    class Projectil : SimpleDrawableObject
+    public class Projectil : SimpleDrawableObject
     {
         ParticleEngine.Engine particleEngine;
         Animation explosion1;
@@ -41,7 +41,7 @@ namespace Pooyan.GameObjects
 
             // Explosión
             if (!fueraDeRango)
-                explosion1.Update(gameTime.ElapsedGameTime, new Vector2(position.X,position.Y - 100));
+                explosion1.Update(gameTime.ElapsedGameTime, new Vector2(position.X - 25,position.Y - 100));
         }
 
         public void Draw(SpriteBatch spriteBatch)

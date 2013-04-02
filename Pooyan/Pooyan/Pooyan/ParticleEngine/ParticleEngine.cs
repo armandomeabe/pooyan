@@ -54,7 +54,6 @@ namespace Pooyan.ParticleEngine
             for (int i = 0; i < total; i++)
                 particles.Add(GenerateNewParticle());
 
-            // Buena idea
             for (int particle = 0; particle < particles.Count; particle++)
             {
                 particles[particle].Update();
@@ -68,12 +67,10 @@ namespace Pooyan.ParticleEngine
 
         public void Draw(SpriteBatch spriteBatch)
         {
-            //spriteBatch.Begin();
             for (int index = 0; index < particles.Count; index++)
             {
                 particles[index].Draw(spriteBatch);
             }
-            //spriteBatch.End();
         }
     }
 }
